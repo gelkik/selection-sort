@@ -1,5 +1,20 @@
 function selectionSort(arr) {
   // type your code here
+  if (arr.length > 0){
+    for (let i = 1; i<arr.length;i++){
+      for (let j = 0; j<i;j++){
+        if (arr[i]<arr[j]){
+          let temp = arr[j];
+          arr[j]=arr[i];
+          arr[i]=temp;
+        }
+      }
+    }
+    return arr;
+  }
+  else{
+    return arr;
+  }
 }
 
 if (require.main === module) {
